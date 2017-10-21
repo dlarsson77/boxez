@@ -1,0 +1,51 @@
+
+.edit-canvas {
+  outline: none;
+  width: 500px;
+  height: 500px; /* height: 258px; eventually, dynamically set this to be same as width*/
+  background-color: none;
+  touch-action: auto;
+}
+
+.btn-floating.btn-large {
+    width: 65px;
+    height: 65px;
+    line-height: 75px;
+    /*background-color: #81d4fa; /*light-blue lighten-3*/
+    box-shadow: none;
+}
+
+.btn-floating.btn-large.red {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+}
+
+a.btn-floating.btn-large.red {
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.btn-floating.btn-large i {
+    line-height: 65px;
+    font-size: 3rem;
+}
+.btn-floating.btn-large.red i {
+    line-height: 75px;
+    font-size: 3.5rem;
+}
+
+.btn-large.red i {
+    background-color: #f57f17;/* yellow darken-4 #f9a825; yellow darken-3 #f57c00; orange darken-2; blue lighten-1*/
+    font-size: 3rem;
+}
+
+.ctrlactive.waves-effect.waves-light.custom {
+  background-color:#0277bd;/*  light-blue darken-3*/
+}
+
+.waves-effect.waves-light.custom {
+  background-color: #81d4fa; /*light-blue lighten-3*/
+}

@@ -1,0 +1,21 @@
+
+.row .col {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.pagination li.active {
+    background-color: #f57f17; /*yellow darken-4*/
+}
+
+.textoverlay {
+    color: #616161;
+}
+
+.hoverhelper {
+  cursor: pointer;
+}
+
+.secondtext {
+  margin-left: 0.5rem;
+}

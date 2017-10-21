@@ -1,0 +1,60 @@
+<!-- Sign in Modal -->
+<div id="modal-auth" class="modal">
+  <div class="modal-content">
+    <h4 ng-if="$ctrl.formMode=='signin'">Sign In</h4>
+    <h4 ng-if="$ctrl.formMode=='signup'">Sign Up</h4>
+    <div class="container">
+ <div class="row">
+
+   <form ng-submit="$ctrl.formSubmit($ctrl.user, $ctrl.password, $ctrl.formMode)" id="signin-form" class="col s12">
+
+     <div class="row">
+
+       <div class="input-field">
+         <input ng-model="$ctrl.user" id="user" type="text" class="validate" required>
+         <label for="user">user name</label>
+       </div>
+       <div class="col s12"></div>
+       <div class="input-field">
+         <input ng-model="$ctrl.password" id="password" type="password" class="validate" required>
+         <label for="password">password</label>
+       </div>
+     </div>
+
+     <div class="col s12"></div>
+
+     <div ng-if="$ctrl.formMessage=='signuperr'">
+       <p class="modal-error">That username is already in use. Please try again.</p>
+       <section class="modal-section"></section>
+     </div>
+     <div ng-if="$ctrl.formMessage=='signupsuc'">
+       <p>Thankyou for signing up! Now, Please sign in.</p>
+       <section class="modal-section"></section>
+     </div>
+     <div ng-if="$ctrl.formMessage=='signinfail'">
+       <p class="modal-error">Username or password is incorrect. Please try again.</p>
+       <section class="modal-section"></section>
+     </div>
+
+     <div ng-if="$ctrl.formMode=='signup'">
+       <p>To start creating boxes right away, please select a username and password.</p>
+       <section class="modal-section"></section>
+     </div>
+
+     <div class="col s12"></div>
+
+     <div ng-if="$ctrl.formMode=='signin'" class="center-align">
+       <button class="btn waves-effect waves-light blue" type="submit" name="action">sign in</button>
+       <p id="info-text" class="center-align">Please sign in or <a ng-click="$ctrl.formMode='signup'; $ctrl.clearInputs()" href="signup.html">sign up</a></p>
+     </div>
+
+     <div ng-if="$ctrl.formMode=='signup'" class="center-align">
+       <button class="btn waves-effect waves-light blue" type="submit" name="action">sign up</button>
+       <p id="info-text" class="center-align">Please sign up or <a ng-click="$ctrl.formMode='signin'; $ctrl.clearInputs()" href="signup.html">sign in</a></p>
+     </div>
+
+   </form>
+ </div>
+</div>
+  </div>
+</div>

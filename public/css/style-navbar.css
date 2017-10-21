@@ -1,0 +1,36 @@
+.brand-logo {
+  margin-left: 15px;
+  color: black;
+}
+
+navbar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+nav {
+  color: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+nav ul a {
+  color: black;
+}
+
+nav .brand-logo {
+  color: black;
+}
+
+.modal {
+    width: 35rem;
+}
+
+.modal-error {
+  color: #F44336;
+}
+
+.modal-section {
+  padding-top: 1.5rem;
+}

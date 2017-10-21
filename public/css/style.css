@@ -1,0 +1,25 @@
+body {
+    height: 100vh;
+  }
+
+  main {
+    flex: 1 1 0;
+  }
+
+
+.anchor-text {
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.canvas-style {
+  outline: none;
+  width: 235px;
+  height: 235px; /* height: 258px; eventually, dynamically set this to be same as width*/
+  background-color: white;
+  margin: auto;
+  touch-action: auto;
+  padding: 0;
+}
